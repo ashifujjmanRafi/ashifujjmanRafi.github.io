@@ -25,9 +25,9 @@ $(document).ready(function() {
 			Cookies.set('mode', 'dark-mode', { expires: 7 });
 			
 		} else {
-			$('body').removeClass('dark-mode');
-			//Remove cookies
-			Cookies.remove('mode');
+			$('body').addClass('dark-mode');
+			//Set cookies for 7 days 
+			Cookies.set('mode', 'dark-mode', { expires: 7 });
 		}
 
 	});
